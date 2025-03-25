@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "into-the-void",
+	"version": "${version}",
+	"name": "Into The Void",
+	"description": "Travel beyond our solar system to a world in chaos.",
+	"authors": [
+		"Night Shiner Studio"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/into-the-void/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nightshinerst.itv.IntoTheVoid"
+		],
+		"fabric-datagen": [
+			"com.nightshinerst.itv.IntoTheVoidDataGenerator"
+		],
+		"client": [
+			"com.nightshinerst.itv.IntoTheVoidClient"
+		]
+	},
+	"mixins": [
+		"into-the-void.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
