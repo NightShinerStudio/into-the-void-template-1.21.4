@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "itv:block/void_log_block"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "itv:block/cobbled_quartzite_block"
+  }
+}

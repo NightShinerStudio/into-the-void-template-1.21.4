@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/NightShinerStudio/into-the-void-template-1.21.4"
 	},
 	"license": "MIT",
 	"icon": "assets/into-the-void/icon.png",

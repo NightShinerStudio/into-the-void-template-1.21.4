@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "itv:block/quartzite_block"
+    }
+  }
+}

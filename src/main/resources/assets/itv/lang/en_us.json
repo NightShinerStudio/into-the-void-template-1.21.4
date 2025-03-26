@@ -1,0 +1,15 @@
+{
+  "item.itv.alpha_scales": "Alpha Scales",
+  "item.itv.beta_scales": "Beta Scales",
+  "item.itv.charlie_scales": "Charlie Scales",
+  "item.itv.delta_scales": "Delta Scales",
+  "item.itv.void_stick": "Void Stick",
+  "item.itv.void_log_block": "Void Log",
+  "item.itv.void_wood_block": "Void Wood",
+  "item.itv.void_planks_block": "Void Planks",
+  "item.itv.quartzite_block": "Quartzite",
+  "item.itv.cobbled_quartzite_block": "Cobbled Quartzite",
+
+  "itemgroup.itv.beyond_the_void_items": "BTV: Items",
+  "itemgroup.itv.beyond_the_void_blocks": "BTV: Blocks"
+}
