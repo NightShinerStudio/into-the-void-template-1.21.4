@@ -3,6 +3,7 @@ package com.nightshinerst.itv.block;
 import com.nightshinerst.itv.IntoTheVoid;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.Block;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
