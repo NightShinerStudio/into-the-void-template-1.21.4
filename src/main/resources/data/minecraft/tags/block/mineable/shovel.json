@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "itv:ash_sand_block"
+    "itv:ash_sand_block",
+    "itv:tan_sand_block",
   ]
 }

@@ -30,7 +30,11 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block ASH_SAND_BLOCK = registerBlock("ash_sand_block",
-            new PillarBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "ash_sand_block"))).strength(2f, 2f)
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "ash_sand_block"))).strength(.5f, .6f)
+                    .sounds(BlockSoundGroup.SAND)));
+
+    public static final Block TAN_SAND_BLOCK = registerBlock("tan_sand_block",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "tan_sand_block"))).strength(.5f, .6f)
                     .sounds(BlockSoundGroup.SAND)));
 
     public static final Block QUARTZITE_BLOCK = registerBlock("quartzite_block",
