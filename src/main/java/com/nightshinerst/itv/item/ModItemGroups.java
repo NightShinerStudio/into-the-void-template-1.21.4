@@ -33,6 +33,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_WOOD_BLOCK);
                         entries.add(ModBlocks.QUARTZITE_BLOCK);
                         entries.add(ModBlocks.COBBLED_QUARTZITE_BLOCK);
+                        entries.add(ModBlocks.ASH_SAND_BLOCK);
                     }).build());
 
 

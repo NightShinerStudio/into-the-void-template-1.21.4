@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "itv:block/ash_sand_block"
+      },
+      {
+        "model": "itv:block/ash_sand_block",
+        "y": 90
+      },
+      {
+        "model": "itv:block/ash_sand_block",
+        "y": 180
+      },
+      {
+        "model": "itv:block/ash_sand_block",
+        "y": 270
+      }
+    ]
+  }
+}

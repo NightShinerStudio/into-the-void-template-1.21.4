@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "itv:block/quartzite_block"
-    }
+    "": [
+      {
+        "model": "itv:block/quartzite_block"
+      },
+      {
+        "model": "itv:block/quartzite_block",
+        "y": 90
+      },
+      {
+        "model": "itv:block/quartzite_block",
+        "y": 180
+      },
+      {
+        "model": "itv:block/quartzite_block",
+        "y": 270
+      }
+    ]
   }
 }

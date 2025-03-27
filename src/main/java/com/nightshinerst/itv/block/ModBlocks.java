@@ -29,6 +29,10 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_wood_block"))).strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
 
+    public static final Block ASH_SAND_BLOCK = registerBlock("ash_sand_block",
+            new PillarBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "ash_sand_block"))).strength(2f, 2f)
+                    .sounds(BlockSoundGroup.SAND)));
+
     public static final Block QUARTZITE_BLOCK = registerBlock("quartzite_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "quartzite_block"))).strength(1.5f, 6f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));

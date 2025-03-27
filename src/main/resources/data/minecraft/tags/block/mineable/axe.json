@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "itv:void_log_block",
+    "itv:void_planks_block",
+    "itv:void_wood_block"
+  ]
+}
