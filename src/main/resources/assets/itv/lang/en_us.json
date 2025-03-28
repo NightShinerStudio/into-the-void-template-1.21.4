@@ -9,8 +9,10 @@
   "item.itv.void_planks_block": "Void Planks",
   "item.itv.quartzite_block": "Quartzite",
   "item.itv.cobbled_quartzite_block": "Cobbled Quartzite",
-  "item.itv.ash_sand_block": "Ash Sand",
+  "item.itv.ash_sand_block": "Ash",
   "item.itv.tan_sand_block": "Tan Sand",
+  "item.itv.raw_sklanko_wing": "Raw Sklanko",
+  "item.itv.cooked_sklanko_wing": "Cooked Sklanko",
 
   "itemgroup.itv.beyond_the_void_items": "BTV: Items",
   "itemgroup.itv.beyond_the_void_blocks": "BTV: Blocks"

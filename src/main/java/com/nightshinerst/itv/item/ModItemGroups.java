@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CHARLIE_SCALES);
                         entries.add(ModItems.DELTA_SCALES);
                         entries.add(ModItems.VOID_STICK);
+                        entries.add(ModItems.RAW_SKLANKO_WING);
+                        entries.add(ModItems.COOKED_SKLANKO_WING);
                     }).build());
 
     public static final ItemGroup BEYOND_THE_VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

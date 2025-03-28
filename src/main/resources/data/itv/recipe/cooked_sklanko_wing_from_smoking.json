@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "itv:raw_sklanko_wing",
+  "result": {
+    "id": "itv:cooked_sklanko_wing"
+  }
+}

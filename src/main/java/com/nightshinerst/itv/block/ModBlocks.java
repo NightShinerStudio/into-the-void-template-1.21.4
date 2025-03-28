@@ -1,10 +1,12 @@
 package com.nightshinerst.itv.block;
 
+import com.mojang.serialization.MapCodec;
 import com.nightshinerst.itv.IntoTheVoid;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -34,8 +36,13 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.SAND)));
 
     public static final Block TAN_SAND_BLOCK = registerBlock("tan_sand_block",
-            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "tan_sand_block"))).strength(.5f, .6f)
-                    .sounds(BlockSoundGroup.SAND)));
+            new FallingBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "tan_sand_block"))).strength(.5f, .6f)
+                    .sounds(BlockSoundGroup.SAND)) {
+                @Override
+                protected MapCodec<? extends FallingBlock> getCodec() {
+                    return null;
+                }
+            });
 
     public static final Block QUARTZITE_BLOCK = registerBlock("quartzite_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "quartzite_block"))).strength(1.5f, 6f)
