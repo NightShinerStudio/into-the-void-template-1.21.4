@@ -12,7 +12,7 @@
 		"sources": "https://github.com/NightShinerStudio/into-the-void-template-1.21.4"
 	},
 	"license": "MIT",
-	"icon": "assets/into-the-void/icon.png",
+	"icon": "assets/itv/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
