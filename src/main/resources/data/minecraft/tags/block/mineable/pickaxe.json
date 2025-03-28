@@ -2,6 +2,13 @@
   "replace": false,
   "values": [
     "itv:quartzite_block",
-    "itv:cobbled_quartzite_block"
+    "itv:cobbled_quartzite_block",
+    "itv:petrol_quartzite_ore_block",
+    "itv:iron_quartzite_ore_block",
+    "itv:gold_quartzite_ore_block",
+    "itv:diamond_quartzite_ore_block",
+    "itv:emerald_quartzite_ore_block",
+    "itv:lapis_quartzite_ore_block",
+    "itv:redstone_quartzite_ore_block"
   ]
 }

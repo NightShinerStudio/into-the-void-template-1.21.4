@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_STICK);
                         entries.add(ModItems.RAW_SKLANKO_WING);
                         entries.add(ModItems.COOKED_SKLANKO_WING);
+                        entries.add(ModItems.RAW_PETROL);
                     }).build());
 
     public static final ItemGroup BEYOND_THE_VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -37,6 +38,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.COBBLED_QUARTZITE_BLOCK);
                         entries.add(ModBlocks.ASH_SAND_BLOCK);
                         entries.add(ModBlocks.TAN_SAND_BLOCK);
+                        entries.add(ModBlocks.PETROL_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.IRON_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.GOLD_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.DIAMOND_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.EMERALD_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.LAPIS_QUARTZITE_ORE_BLOCK);
+                        entries.add(ModBlocks.REDSTONE_QUARTZITE_ORE_BLOCK);
                     }).build());
 
 

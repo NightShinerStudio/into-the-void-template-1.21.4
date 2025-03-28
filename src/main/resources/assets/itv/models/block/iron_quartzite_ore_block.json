@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "itv:block/iron_quartzite_ore_block"
+  }
+}

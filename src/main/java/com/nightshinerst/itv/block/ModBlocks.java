@@ -3,11 +3,8 @@ package com.nightshinerst.itv.block;
 import com.mojang.serialization.MapCodec;
 import com.nightshinerst.itv.IntoTheVoid;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.AbstractBlock.Settings;
-import net.minecraft.block.Block;
-import net.minecraft.block.FallingBlock;
-import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,6 +14,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block VOID_LOG_BLOCK = registerBlock("void_log_block",
@@ -51,6 +49,39 @@ public class ModBlocks {
     public static final Block COBBLED_QUARTZITE_BLOCK = registerBlock("cobbled_quartzite_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "cobbled_quartzite_block"))).strength(2f, 6f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PETROL_QUARTZITE_ORE_BLOCK = registerBlock("petrol_quartzite_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(0, 2),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "petrol_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block IRON_QUARTZITE_ORE_BLOCK = registerBlock("iron_quartzite_ore_block",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "iron_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GOLD_QUARTZITE_ORE_BLOCK = registerBlock("gold_quartzite_ore_block",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "gold_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block DIAMOND_QUARTZITE_ORE_BLOCK = registerBlock("diamond_quartzite_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "diamond_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block EMERALD_QUARTZITE_ORE_BLOCK = registerBlock("emerald_quartzite_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "emerald_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block LAPIS_QUARTZITE_ORE_BLOCK = registerBlock("lapis_quartzite_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "lapis_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block REDSTONE_QUARTZITE_ORE_BLOCK = registerBlock("redstone_quartzite_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 5),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "redstone_quartzite_ore_block"))).strength(3f, 3f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

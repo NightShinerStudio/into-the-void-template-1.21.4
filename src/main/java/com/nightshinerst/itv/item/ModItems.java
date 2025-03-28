@@ -17,6 +17,7 @@ public class ModItems {
     public static final Item VOID_STICK = registerItem("void_stick", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(IntoTheVoid.MOD_ID, "void_stick")))));
     public static final Item RAW_SKLANKO_WING = registerItem("raw_sklanko_wing", new Item(new Item.Settings().food(ModFoodComponents.RAW_SKLANKO_WING, ModConsumableComponents.RAW_SKLANKO_WING).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(IntoTheVoid.MOD_ID, "raw_sklanko_wing")))));
     public static final Item COOKED_SKLANKO_WING = registerItem("cooked_sklanko_wing", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SKLANKO_WING).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(IntoTheVoid.MOD_ID, "cooked_sklanko_wing")))));
+    public static final Item RAW_PETROL = registerItem("raw_petrol", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(IntoTheVoid.MOD_ID, "raw_petrol")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(IntoTheVoid.MOD_ID, name), item);
