@@ -5,8 +5,12 @@ import com.nightshinerst.itv.item.ModItemGroups;
 import com.nightshinerst.itv.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
+import net.minecraft.item.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static net.minecraft.item.FuelRegistry.*;
 
 //Ignore this comment. >:3
 public class IntoTheVoid implements ModInitializer {
@@ -19,5 +23,6 @@ public class IntoTheVoid implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItems.registerFuels();
 	}
 }

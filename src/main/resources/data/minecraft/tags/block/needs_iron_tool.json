@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "itv:quartzite_block",
-    "itv:cobbled_quartzite_block",
     "itv:gold_quartzite_ore_block",
     "itv:diamond_quartzite_ore_block",
     "itv:emerald_quartzite_ore_block",

@@ -2,6 +2,7 @@ package com.nightshinerst.itv.item;
 
 import com.nightshinerst.itv.IntoTheVoid;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -31,9 +32,14 @@ public class ModItems {
         entries.add(VOID_STICK);
         entries.add(RAW_SKLANKO_WING);
         entries.add(COOKED_SKLANKO_WING);
+        entries.add(RAW_PETROL);
     }
 
     public static void registerModItems() {
         IntoTheVoid.LOGGER.info("Registering Mod Items for " + IntoTheVoid.MOD_ID);
+    }
+
+    public static void registerFuels() {
+        FuelRegistryEvents.BUILD.register(((builder, context) -> builder.add(RAW_PETROL, 1600)));
     }
 }

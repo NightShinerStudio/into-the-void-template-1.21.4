@@ -18,16 +18,28 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block VOID_LOG_BLOCK = registerBlock("void_log_block",
-            new PillarBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_log_block"))).strength(2f, 2f)
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_log_block"))).strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block STRIPPED_VOID_LOG_BLOCK = registerBlock("stripped_void_log_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "stripped_void_log_block"))).strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block VOID_PLANKS_BLOCK = registerBlock("void_planks_block",
-            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_planks_block"))).strength(2f, 2f)
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_planks_block"))).strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block VOID_WOOD_BLOCK = registerBlock("void_wood_block",
-            new PillarBlock(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_wood_block"))).strength(2f, 2f)
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_wood_block"))).strength(2f, 2f)
                     .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block STRIPPED_VOID_WOOD_BLOCK = registerBlock("stripped_void_wood_block",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "stripped_void_wood_block"))).strength(2f, 2f)
+                    .sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block VOID_LEAVES_BLOCK = registerBlock("void_leaves_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "void_leaves_block")))
+                    .sounds(BlockSoundGroup.CHERRY_LEAVES)));
 
     public static final Block ASH_SAND_BLOCK = registerBlock("ash_sand_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "ash_sand_block"))).strength(.5f, .6f)
@@ -52,7 +64,7 @@ public class ModBlocks {
 
     public static final Block PETROL_QUARTZITE_ORE_BLOCK = registerBlock("petrol_quartzite_ore_block",
             new ExperienceDroppingBlock(UniformIntProvider.create(0, 2),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "petrol_quartzite_ore_block"))).strength(3f, 3f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+                    .requiresTool().sounds(BlockSoundGroup.SLIME)));
 
     public static final Block IRON_QUARTZITE_ORE_BLOCK = registerBlock("iron_quartzite_ore_block",
             new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(IntoTheVoid.MOD_ID, "iron_quartzite_ore_block"))).strength(3f, 3f)
